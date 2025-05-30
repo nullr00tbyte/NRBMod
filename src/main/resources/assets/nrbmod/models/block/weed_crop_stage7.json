@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "nrbmod:block/weed_crop_stage1"
+    "crop": "nrbmod:block/weed_crop_stage7"
   }
 }
