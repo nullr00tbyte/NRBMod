@@ -19,11 +19,11 @@
                   "block": "nrbmod:weed_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "age": "4"
+                    "age": "7"
                   }
                 }
               ],
-              "name": "nrbmod:weed_seed"
+              "name": "nrbmod:bud"
             },
             {
               "type": "minecraft:item",
@@ -41,7 +41,7 @@
           "block": "nrbmod:weed_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "4"
+            "age": "7"
           }
         }
       ],

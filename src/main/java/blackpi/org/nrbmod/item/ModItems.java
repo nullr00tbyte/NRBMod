@@ -22,6 +22,13 @@ public class ModItems {
             new Item.Settings().useItemPrefixedTranslationKey() // Clave para 1.21.4+
     );
 
+    public static  final Item BUD = register(
+            "bud",
+            Item::new,
+            new Item.Settings()
+    );
+
+
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Nrbmod.MOD_ID, name));
@@ -38,6 +45,7 @@ public class ModItems {
     public static void registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(WEED_SEED);
+            entries.add(BUD);
         });
 
     }

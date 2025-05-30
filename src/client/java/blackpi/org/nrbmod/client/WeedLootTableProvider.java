@@ -18,6 +18,6 @@ public class WeedLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.WEED_CROP, cropDrops(ModBlocks.WEED_CROP, ModItems.WEED_SEED, ModItems.WEED_SEED, BlockStatePropertyLootCondition.builder(ModBlocks.WEED_CROP).properties(StatePredicate.Builder.create().exactMatch(WeedCropBlock.AGE, 7))));
+        addDrop(ModBlocks.WEED_CROP, cropDrops(ModBlocks.WEED_CROP, ModItems.BUD, ModItems.WEED_SEED, BlockStatePropertyLootCondition.builder(ModBlocks.WEED_CROP).properties(StatePredicate.Builder.create().exactMatch(WeedCropBlock.AGE, 7))));
     }
 }
