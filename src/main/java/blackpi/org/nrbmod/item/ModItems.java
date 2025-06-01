@@ -2,19 +2,58 @@ package blackpi.org.nrbmod.item;
 
 import blackpi.org.nrbmod.Nrbmod;
 import blackpi.org.nrbmod.block.ModBlocks;
+import blackpi.org.nrbmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.ConsumableComponent;
+import net.minecraft.component.type.ConsumableComponents;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-
+import java.util.List;
 import java.util.function.Function;
+import net.minecraft.item.consume.UseAction;
+
 
 public class ModItems {
+
+
+
+
+    public static final FoodComponent CANNABIS_FOOD_COMPONENT = new FoodComponent.Builder()
+            .alwaysEdible()
+            .build();
+
+
+    public static final ConsumableComponent CANNABIS_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(
+                    List.of( // Lista de StatusEffectInstance
+                            //new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 20, 0),      // 20 segundos de mareo
+                            new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 1),    // 30 segundos de lentitud (Nivel II)
+                            //new StatusEffectInstance(StatusEffects.BLINDNESS, 5 * 20, 0),   // 5 segundos de visión borrosa
+                            new StatusEffectInstance(StatusEffects.HUNGER, 45 * 20, 0),      // 45 segundos de hambre ("munchies")
+                            new StatusEffectInstance(StatusEffects.GLOWING, 60 * 20, 0),     // 60 segundos de brillo (euforia)
+                            new StatusEffectInstance(StatusEffects.LEVITATION, 15 * 20, 0),   // 3 segundos de levitación
+                            //new StatusEffectInstance(StatusEffects.WEAKNESS, 40 * 20, 0),    // 40 segundos de debilidad
+                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 5 * 20, 3),   // 5 segundos de salto exagerado
+                            new StatusEffectInstance(StatusEffects.SPEED, 10 * 20, 1)      // 10 segundos de velocidad
+                            //new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20, 0)     // 15 segundos de distorsión visual
+                    ),
+                    1.0f // Probabilidad del 100%
+            ))
+            .sound(ModSounds.JOINT_SMOKE)
+            .consumeParticles(false)
+            .useAction(UseAction.TOOT_HORN)
+            .finishSound(ModSounds.COF)
+            .build();
 
     public static final Item WEED_SEED = register(
             "weed_seed",
@@ -26,6 +65,12 @@ public class ModItems {
             "bud",
             Item::new,
             new Item.Settings()
+    );
+
+    public static  final Item JOINT = register(
+            "joint",
+            Item::new,
+            new Item.Settings().food(CANNABIS_FOOD_COMPONENT, CANNABIS_CONSUMABLE_COMPONENT)
     );
 
 
@@ -46,6 +91,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(WEED_SEED);
             entries.add(BUD);
+            entries.add(JOINT);
         });
 
     }

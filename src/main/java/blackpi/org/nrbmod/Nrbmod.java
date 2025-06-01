@@ -2,6 +2,7 @@
 package blackpi.org.nrbmod;
 import blackpi.org.nrbmod.block.ModBlocks;
 import blackpi.org.nrbmod.item.ModItems;
+import blackpi.org.nrbmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 public class Nrbmod implements ModInitializer {
@@ -9,6 +10,7 @@ public class Nrbmod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModSounds.initialize();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
     }

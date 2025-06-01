@@ -1,6 +1,22 @@
 {
-  "parent": "block/crop",
+  "parent": "block/cube",
   "textures": {
-    "crop": "nrbmod:block/weed_crop_stage0"
-  }
+    "0": "nrbmod:block/weed_crop_stage0",
+    "particle": "nrbmod:block/weed_crop_stage0"
+  },
+  "elements": [
+    {
+      "from": [7, 0, 8],
+      "to": [8, 6, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+      "faces": {
+        "north": {"uv": [7, 12, 8, 16], "texture": "#0"},
+        "east": {"uv": [7, 12, 8, 16], "texture": "#0"},
+        "south": {"uv": [7, 12, 8, 16], "texture": "#0"},
+        "west": {"uv": [7, 12, 8, 16], "texture": "#0"},
+        "up": {"uv": [8, 16, 7, 15], "texture": "#0"},
+        "down": {"uv": [5, 1, 4, 2], "texture": "#missing"}
+      }
+    }
+  ]
 }
