@@ -5,7 +5,7 @@ import blackpi.org.nrbmod.item.ModItems;
 import blackpi.org.nrbmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
-public class Nrbmod implements ModInitializer {
+public class Rootkz implements ModInitializer {
     public static final String MOD_ID = "nrbmod";
 
     @Override

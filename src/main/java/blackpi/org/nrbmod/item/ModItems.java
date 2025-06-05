@@ -1,6 +1,6 @@
 package blackpi.org.nrbmod.item;
 
-import blackpi.org.nrbmod.Nrbmod;
+import blackpi.org.nrbmod.Rootkz;
 import blackpi.org.nrbmod.block.ModBlocks;
 import blackpi.org.nrbmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -76,7 +76,7 @@ public class ModItems {
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
-        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Nrbmod.MOD_ID, name));
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Rootkz.MOD_ID, name));
 
         // Create the item instance.
         Item item = itemFactory.apply(settings.registryKey(itemKey));

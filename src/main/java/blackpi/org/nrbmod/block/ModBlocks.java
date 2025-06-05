@@ -1,9 +1,8 @@
 // ModBlocks.java
 package blackpi.org.nrbmod.block;
 
-import blackpi.org.nrbmod.Nrbmod;
+import blackpi.org.nrbmod.Rootkz;
 import blackpi.org.nrbmod.item.ModItems;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,7 +21,7 @@ public class ModBlocks {
     );
 
     private static <T extends Block> T registerBlockOnly(String path, Function<Block.Settings, T> factory, Block.Settings settings) {
-        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Nrbmod.MOD_ID, path));
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Rootkz.MOD_ID, path));
         T block = factory.apply(settings.registryKey(blockKey));
         Registry.register(Registries.BLOCK, blockKey, block);
         return block;
