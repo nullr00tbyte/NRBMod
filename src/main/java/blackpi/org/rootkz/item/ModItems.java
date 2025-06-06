@@ -1,8 +1,8 @@
-package blackpi.org.nrbmod.item;
+package blackpi.org.rootkz.item;
 
-import blackpi.org.nrbmod.Rootkz;
-import blackpi.org.nrbmod.block.ModBlocks;
-import blackpi.org.nrbmod.sound.ModSounds;
+import blackpi.org.rootkz.Rootkz;
+import blackpi.org.rootkz.block.ModBlocks;
+import blackpi.org.rootkz.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.component.type.ConsumableComponents;

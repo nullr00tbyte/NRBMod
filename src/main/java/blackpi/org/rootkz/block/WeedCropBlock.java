@@ -1,7 +1,6 @@
 // WeedCropBlock.java
-package blackpi.org.nrbmod.block;
+package blackpi.org.rootkz.block;
 
-import blackpi.org.nrbmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;

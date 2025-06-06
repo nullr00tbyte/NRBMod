@@ -1,8 +1,8 @@
 // ModBlocks.java
-package blackpi.org.nrbmod.block;
+package blackpi.org.rootkz.block;
 
-import blackpi.org.nrbmod.Rootkz;
-import blackpi.org.nrbmod.item.ModItems;
+import blackpi.org.rootkz.Rootkz;
+import blackpi.org.rootkz.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

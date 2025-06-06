@@ -1,8 +1,8 @@
 package blackpi.org.nrbmod.client;
 
-import blackpi.org.nrbmod.block.ModBlocks;
-import blackpi.org.nrbmod.block.WeedCropBlock;
-import blackpi.org.nrbmod.item.ModItems;
+import blackpi.org.rootkz.block.ModBlocks;
+import blackpi.org.rootkz.block.WeedCropBlock;
+import blackpi.org.rootkz.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.loot.LootPool;

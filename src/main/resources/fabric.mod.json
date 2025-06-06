@@ -17,7 +17,7 @@
       "blackpi.org.nrbmod.client.NrbmodClient"
     ],
     "main": [
-      "blackpi.org.nrbmod.Rootkz"
+      "blackpi.org.rootkz.Rootkz"
     ]
   },
   "mixins": [

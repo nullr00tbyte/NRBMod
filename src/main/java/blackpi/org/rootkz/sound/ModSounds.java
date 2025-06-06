@@ -1,6 +1,6 @@
-package blackpi.org.nrbmod.sound;
+package blackpi.org.rootkz.sound;
 
-import blackpi.org.nrbmod.Rootkz;
+import blackpi.org.rootkz.Rootkz;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
