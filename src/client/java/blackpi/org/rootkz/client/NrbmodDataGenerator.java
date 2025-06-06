@@ -1,4 +1,4 @@
-package blackpi.org.nrbmod.client;
+package blackpi.org.rootkz.client;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

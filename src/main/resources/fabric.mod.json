@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "nrbmod",
+  "id": "rootkz",
   "version": "${version}",
-  "name": "NRBMod",
+  "name": "RootKz",
   "description": "",
   "authors": [],
   "contact": {},
@@ -11,19 +11,19 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "blackpi.org.nrbmod.client.NrbmodDataGenerator"
+      "blackpi.org.rootkz.client.NrbmodDataGenerator"
     ],
     "client": [
-      "blackpi.org.nrbmod.client.NrbmodClient"
+      "blackpi.org.rootkz.client.NrbmodClient"
     ],
     "main": [
       "blackpi.org.rootkz.Rootkz"
     ]
   },
   "mixins": [
-    "nrbmod.mixins.json",
+    "rootkz.mixins.json",
     {
-      "config": "nrbmod.client.mixins.json",
+      "config": "rootkz.client.mixins.json",
       "environment": "client"
     }
   ],

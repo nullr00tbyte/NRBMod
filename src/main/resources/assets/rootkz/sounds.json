@@ -10,5 +10,14 @@
     "sounds": [
       "rootkz:cof"
     ]
+  },
+  "dub_song": {
+    "subtitle": "rootkz.dub_song",
+    "sounds": [
+      {
+        "name": "rootkz:dub_song",
+        "stream": true
+      }
+    ]
   }
 }

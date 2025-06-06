@@ -1,4 +1,4 @@
-package blackpi.org.nrbmod.client;
+package blackpi.org.rootkz.client;
 
 import blackpi.org.rootkz.block.ModBlocks;
 import blackpi.org.rootkz.block.WeedCropBlock;

@@ -1,5 +1,5 @@
 // NrbmodClient.java
-package blackpi.org.nrbmod.client;
+package blackpi.org.rootkz.client;
 
 import blackpi.org.rootkz.block.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;

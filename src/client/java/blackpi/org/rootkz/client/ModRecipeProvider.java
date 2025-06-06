@@ -1,4 +1,4 @@
-package blackpi.org.nrbmod.client;
+package blackpi.org.rootkz.client;
 import java.util.concurrent.CompletableFuture;
 import blackpi.org.rootkz.item.ModItems;
 import net.minecraft.data.recipe.RecipeExporter;

@@ -1,5 +1,8 @@
 {
   "item.rootkz.weed_seed": "Semilla de Mota",
   "item.rootkz.bud": "Colocho",
-  "item.rootkz.joint": "Puro"
+  "item.rootkz.joint": "Puro",
+  "effect.rootkz.weed": "Moteado",
+  "item.rootkz.dub_song_disc": "Ajvar Relish Music Disc",
+  "item.rootkz.dub_song_disc.desc": "Ajvar Relish - Goto80"
 }

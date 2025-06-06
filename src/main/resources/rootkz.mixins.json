@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "blackpi.org.nrbmod.mixin.client",
+  "package": "blackpi.org.rootkz.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [
+  "mixins": [
   ],
   "injectors": {
     "defaultRequire": 1

@@ -42,7 +42,8 @@ public class ModItems {
                             new StatusEffectInstance(StatusEffects.GLOWING, 60 * 20, 0),     // 60 segundos de brillo (euforia)
                             new StatusEffectInstance(StatusEffects.LEVITATION, 15 * 20, 0),   // 3 segundos de levitación
                             new StatusEffectInstance(StatusEffects.JUMP_BOOST, 5 * 20, 3),   // 5 segundos de salto exagerado
-                            new StatusEffectInstance(StatusEffects.SPEED, 10 * 20, 1)      // 10 segundos de velocidad
+                            new StatusEffectInstance(StatusEffects.SPEED, 10 * 20, 1),      // 10 segundos de velocidad
+                            new StatusEffectInstance(Rootkz.WEED, 10*20,1)
                     ),
 
                     1.0f
@@ -94,11 +95,14 @@ public class ModItems {
         return item;
     }
 
+    public static final Item DUB_SONG_DISC = register("dub_song_disc", Item::new, new Item.Settings().jukeboxPlayable(ModSounds.DUB_SONG_KEY).maxCount(1) );
+
     public static void registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(WEED_SEED);
             entries.add(BUD);
             entries.add(JOINT);
+            entries.add(DUB_SONG_DISC);
         });
 
     }
