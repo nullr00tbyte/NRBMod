@@ -15,13 +15,12 @@ import java.util.function.Function;
 
 public class ModBlocks {
     public static final WeedCropBlock WEED_CROP = registerBlockOnly(
-            "weed_crop",
             settings -> new WeedCropBlock(settings, () -> ModItems.WEED_SEED),
             Block.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
     );
 
-    private static <T extends Block> T registerBlockOnly(String path, Function<Block.Settings, T> factory, Block.Settings settings) {
-        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Rootkz.MOD_ID, path));
+    private static <T extends Block> T registerBlockOnly(Function<Block.Settings, T> factory, Block.Settings settings) {
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Rootkz.MOD_ID, "weed_crop"));
         T block = factory.apply(settings.registryKey(blockKey));
         Registry.register(Registries.BLOCK, blockKey, block);
         return block;

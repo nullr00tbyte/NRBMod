@@ -24,7 +24,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(registryLookup, exporter) {
             @Override
             public void generate() {
-                RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
+
 
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.JOINT) // You can also specify an int to produce more than one
                         .input(ModItems.BUD)
