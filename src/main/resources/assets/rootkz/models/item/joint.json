@@ -1,6 +1,33 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "rootkz:item/joint"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "rootkz:item/joint"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 95, -40],
+			"translation": [0, 2.75, 0],
+			"scale": [0.31, 0.31, 0.31]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [4, 8, 23],
+			"translation": [2.25, 2.25, 0],
+			"scale": [0.31, 0.28, 0.28]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [87, 75, 130],
+			"scale": [0.37, 0.39, 0.38]
+		},
+		"head": {
+			"rotation": [-27, -69, 0],
+			"translation": [0, -3, -9.5],
+			"scale": [0.29, 0.3, 0.31]
+		}
+	}
 }
