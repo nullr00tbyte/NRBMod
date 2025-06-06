@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    "nrbmod:bud",
+    "rootkz:bud",
     "minecraft:paper"
   ],
   "result": {
     "count": 1,
-    "id": "nrbmod:joint"
+    "id": "rootkz:joint"
   }
 }

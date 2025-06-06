@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nrbmod:joint"
+        "recipe": "rootkz:joint"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "nrbmod:joint"
+      "rootkz:joint"
     ]
   }
 }

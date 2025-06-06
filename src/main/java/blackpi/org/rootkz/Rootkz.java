@@ -6,7 +6,7 @@ import blackpi.org.rootkz.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 public class Rootkz implements ModInitializer {
-    public static final String MOD_ID = "nrbmod";
+    public static final String MOD_ID = "rootkz";
 
     @Override
     public void onInitialize() {

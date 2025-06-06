@@ -2,8 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/cube",
 	"textures": {
-		"4": "nrbmod:block/cogo",
-		"5": "nrbmod:block/hoja"
+		"4": "rootkz:block/cogo",
+		"5": "rootkz:block/hoja",
+		"particle": "rootkz:block/hoja"
 	},
 	"elements": [
 		{

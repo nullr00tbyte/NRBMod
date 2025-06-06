@@ -1,0 +1,14 @@
+{
+  "joint_smoke": {
+    "subtitle": "rootkz.joint_smoke",
+    "sounds": [
+      "rootkz:joint_smoke"
+    ]
+  },
+  "cof": {
+    "subtitle": "rootkz.cof",
+    "sounds": [
+      "rootkz:cof"
+    ]
+  }
+}

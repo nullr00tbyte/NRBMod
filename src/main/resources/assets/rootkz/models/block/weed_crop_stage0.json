@@ -1,8 +1,8 @@
 {
   "parent": "block/cube",
   "textures": {
-    "0": "nrbmod:block/weed_crop_stage0",
-    "particle": "nrbmod:block/weed_crop_stage0"
+    "0": "rootkz:block/weed_crop_stage0",
+    "particle": "rootkz:block/weed_crop_stage0"
   },
   "elements": [
     {
