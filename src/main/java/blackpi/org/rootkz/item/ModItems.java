@@ -27,27 +27,34 @@ public class ModItems {
 
 
 
-
     public static final FoodComponent CANNABIS_FOOD_COMPONENT = new FoodComponent.Builder()
             .alwaysEdible()
             .build();
 
 
     public static final ConsumableComponent CANNABIS_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+
+
             .consumeEffect(new ApplyEffectsConsumeEffect(
                     List.of( // Lista de StatusEffectInstance
-                            //new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 20, 0),      // 20 segundos de mareo
                             new StatusEffectInstance(StatusEffects.SLOWNESS, 30 * 20, 1),    // 30 segundos de lentitud (Nivel II)
-                            //new StatusEffectInstance(StatusEffects.BLINDNESS, 5 * 20, 0),   // 5 segundos de visión borrosa
                             new StatusEffectInstance(StatusEffects.HUNGER, 45 * 20, 0),      // 45 segundos de hambre ("munchies")
                             new StatusEffectInstance(StatusEffects.GLOWING, 60 * 20, 0),     // 60 segundos de brillo (euforia)
                             new StatusEffectInstance(StatusEffects.LEVITATION, 15 * 20, 0),   // 3 segundos de levitación
-                            //new StatusEffectInstance(StatusEffects.WEAKNESS, 40 * 20, 0),    // 40 segundos de debilidad
                             new StatusEffectInstance(StatusEffects.JUMP_BOOST, 5 * 20, 3),   // 5 segundos de salto exagerado
                             new StatusEffectInstance(StatusEffects.SPEED, 10 * 20, 1)      // 10 segundos de velocidad
-                            //new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20, 0)     // 15 segundos de distorsión visual
                     ),
-                    1.0f // Probabilidad del 100%
+
+                    1.0f
+            ))
+            .consumeEffect(new ApplyEffectsConsumeEffect(
+                    List.of(
+                            new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 20, 0),
+                            new StatusEffectInstance(StatusEffects.BLINDNESS, 5 * 20, 0),
+                            new StatusEffectInstance(StatusEffects.WEAKNESS, 40 * 20, 0),
+                            new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20, 0)
+
+                    ), 0.1f // Probabilidad del 10% de un maltrip
             ))
             .sound(ModSounds.JOINT_SMOKE)
             .consumeParticles(false)
