@@ -43,6 +43,18 @@ public class RastaEntity extends WanderingTraderEntity {
                         16, 2, 0.05f
                 )
         );
+        this.getOffers().add(new TradeOffer(
+                        new TradedItem(Items.GOLD_INGOT, 5),
+                        new ItemStack(ModItems.JOINT, 10),
+                        16, 2, 0.05f
+                )
+        );
+        this.getOffers().add(new TradeOffer(
+                        new TradedItem(Items.EMERALD, 1),
+                        new ItemStack(Items.PAPER, 10),
+                        16, 2, 0.05f
+                )
+        );
     }
 
 
