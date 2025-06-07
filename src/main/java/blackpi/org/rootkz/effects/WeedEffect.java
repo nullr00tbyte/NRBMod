@@ -23,9 +23,10 @@ public class WeedEffect extends StatusEffect {
     // Called when the effect is applied.
     @Override
     public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
-        if (entity instanceof PlayerEntity) {
-            ((PlayerEntity) entity).addExperience(1 << amplifier); // Higher amplifier gives you experience faster
-        }
+        //if (entity instanceof PlayerEntity) {
+        //    ((PlayerEntity) entity).addExperience(1 << amplifier); // Higher amplifier gives you experience faster
+        //}
+        // PENDING TO ADD SOMETHING HERE, PD, TE PISAN RONY.
 
         return super.applyUpdateEffect(world, entity, amplifier);
     }
