@@ -2,13 +2,9 @@ package blackpi.org.rootkz.entity;
 
 import blackpi.org.rootkz.item.ModItems;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.DefaultAttributeRegistry;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.WanderingTraderEntity;
 import net.minecraft.item.ItemStack;
@@ -59,7 +55,7 @@ public class RastaEntity extends WanderingTraderEntity {
 
 
     public static DefaultAttributeContainer.Builder createVillagerAttributes() {
-        return MobEntity.createMobAttributes().add(EntityAttributes.MOVEMENT_SPEED, (double)0.5F);
+        return MobEntity.createMobAttributes().add(EntityAttributes.MOVEMENT_SPEED, 0.5F);
     }
 
     @Override

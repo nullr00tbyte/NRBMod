@@ -8,7 +8,6 @@ import blackpi.org.rootkz.entity.RastaTraderManager;
 import blackpi.org.rootkz.item.ModItems;
 import blackpi.org.rootkz.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.entity.effect.StatusEffect;
