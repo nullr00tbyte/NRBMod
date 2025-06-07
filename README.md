@@ -8,7 +8,9 @@ Un mod creado con Fabric para aprender y experimentar con el desarrollo de mods 
 
 - Nueva semilla y cultivo de WEED
 - nuevo ITEM JOINT
-- Sonidos personalizados para el consumo de JOINT
+- Sonidos personalizados para el consumo de JOINT, BUD, 
+- Wandering Rasta Trader
+- New Music Disc
 
 ## 🛠 Requisitos
 
